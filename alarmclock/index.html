@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="center text-center clock">
+            <div class="date-title">Current Date:</div>
+            <span id="date"></span>
+            <div class="time-title">Current Time</div>
+            <span id="time"></span>
+        </div>
+
+        <div class="set-alarm">
+            <div class="set-alarm-title">Set the alarm</div>
+            <span class="set-alarm-input-date">
+                <input type="date" id="input-date">
+            </span>
+            <span class="set-alarm-input-time">
+                <select id="set-alarm-hour">
+                </select> h
+                <select id="set-alarm-min">
+                </select> m
+                <select id="set-alarm-sec">
+                </select> s
+            </span>
+            <span class="alarm-clear-btn">
+                Clear Input
+            </span>
+            <div class="text-center alarm-set-btn">
+                Add Alarm
+            </div>
+
+        </div>
+        <div class="alarm-queue-wrapper">
+            <div class="alarm-queue">
+                <div class="alarm-title">Upcoming Alarms</div>
+                <div class="queue"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <div class="popup-content text-center center">
+            <img src="images/alarm-icon.png" height="150">
+            <div class="popup-title">Your alarm is ringing!</div>
+            <br>
+            <button id="popup-ok">Ok! I'm Awake</button>
+            <button id="popup-snooze">Snooze for 5 mins</button>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>
+
+

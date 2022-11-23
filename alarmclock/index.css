@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #09030a, #360436);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+    /* border: 2px solid black; */
+    height: 100%;
+}
+
+.center {
+    max-width: 500px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clock{
+    box-shadow: white 0px 0px 45px -20px;
+    background: white;
+    padding: 2%;
+    margin-top: 10%;
+    font-size: 35px;
+}
+
+#time, #date {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.set-alarm {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-size: 17px;
+    box-shadow:white 0px 20px 30px -21px;
+}
+
+#input-date, #set-alarm-hour, #set-alarm-min, #set-alarm-sec{
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.alarm-clear-btn{
+    color: white;
+    background: #1a1818;
+    padding: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'serif';
+}
+
+.alarm-set-btn{
+    color: white;
+    background: #cc388b;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.queue {
+    border: 3px solid #dadadd;
+}
+
+.alarm-queue{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px -9px;
+}
+
+.alarm{
+    margin-bottom: 5%;
+    /* border: 2px dotted black; */
+    height: 35px;
+    padding: 1%;
+    background-color: #c0e4ff;
+    box-shadow: 0px 0px 30px -20px;
+}
+
+.alarm-text{
+    padding: 2%;
+    font-size: 25px;
+}
+
+.delete-alarm{
+    color: white;
+    background-color: #da2748;
+    padding: 1%;
+    font-size: medium;
+    float: right;
+    cursor: pointer;
+}
+
+.alarm-title{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+
+#popup{
+    background: #00000085;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: larger;
+
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    columns: black;
+}
+
+.popup-content{
+    margin: 0 auto;
+
+    top: 45vh;
+    border: 2px solid black;
+    padding: 5%;
+    opacity: 1;
+    color: black;
+    z-index: 10;
+    background-color: rgb(234 234 234)
+}
+
+.popup-content > button {
+    margin-top: 5%;
+    padding: 2%;
+    z-index: 10;
+    opacity: 1;
+}
+
+.popup-title{
+    font-size: 30px;
+    color: black;
+    opacity: 1;
+    z-index: 10;
+}
+
+#popup-ok, #popup-snooze {
+    font-size: 16px
+}
+   
+
